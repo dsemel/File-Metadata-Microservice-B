@@ -1,0 +1,50 @@
+
+.container{
+
+  height:100%;
+  display:grid;
+  grid-gap:3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 40px;
+
+
+}
+
+.header{
+
+
+    grid-column: 1 / -1;
+}
+
+
+.form-container{
+
+    display:flex;
+    flex-direction:column;
+    grid-column: 1 / -1;
+}
+
+.form-container > div:nth-child(1n){
+
+    display:flex;
+
+}
+.footer{
+    display:flex;
+    grid-column: 1 / -1;
+
+}
+
+.footer > div:nth-child(1n){
+
+    margin-right:auto;
+    padding: 5px;
+}
+
+.footer > div:nth-child(2n){
+
+    margin-left:auto;
+    margin: 0px;
+
+
+}

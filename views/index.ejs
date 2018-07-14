@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File-Metadata-Microservice</title>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="/basic.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|EB+Garamond|Encode+Sans+Expanded|Inconsolata|Karla|Manuale|Nunito+Sans|Pontano+Sans|Roboto+Slab:300|Rokkitt|Sanchez" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="container">
+    <div class="header"><h1>File-Metadata-Microservice</h1></div>
+
+
+
+    <div class="form-container">
+
+        <h4>Choose File Less Than 1MB</h4>
+
+        <form method="post" action="/fileUpload" enctype="multipart/form-data">
+        <input type="file" name="myFile">
+            <button type="submit">submit</button>
+
+        </form>
+          <br>
+          <br>
+               <div class="result"><%=myFile %> </div>
+    </div>
+
+
+
+       <div class = "footer">
+
+           <div><h4><a href="https://danielsemel.com">danielsemel.com</a></h4></div>
+           <div><h4>Free Code Camp Tutorial Project</h4></div>
+           </div>
+
+   </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,42 @@
+
+.container > div{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color: #FFFFFF;
+}
+
+html,body{
+
+    box-sizing:border-box;
+    height:100%;
+    padding:10px;
+    margin:0px;
+    background-color:#BDBDBD;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.container > div:nth-child(1n){
+
+    background-color: #607D8B;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 480px){
+
+    .header{
+
+        font-size:.5em;
+
+    }
+
+    .footer > div:nth-child(2n){
+
+        display:none;
+    }
+}
