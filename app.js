@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 var dotenv = require('dotenv');
 dotenv.config();
 
-var urlDB = process.env.MONGODB_URI;
+var urlDB = process.env.MONGO_DB_ATLAS;
 
 var fileB = require('./routes/file.js');
 
@@ -22,7 +22,9 @@ var fileB = require('./routes/file.js');
 
 var promise = mongoose.connect(urlDB, {
 
-    useMongoClient: true
+    //useMongoClient: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 
 });
 
