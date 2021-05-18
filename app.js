@@ -83,7 +83,7 @@ app.post('/fileUpload', upload.single('myFile'), function(request,response){
 
     var fileName = request.file.originalname;
     var fileSize = request.file.size;
-    var text0 = "File is "
+    var text0 = "File size "
     var text1 = ":  ";
     var text2 = "  bytes";
     var text3 = "{";
