@@ -2,6 +2,9 @@
   "name": "file-metadata-microservice",
   "version": "0.0.0",
   "private": true,
+
+  "stack": "heroku-20",
+
   "scripts": {
     "start": "node ./bin/www"
   },
