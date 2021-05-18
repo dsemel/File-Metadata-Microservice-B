@@ -1,5 +1,6 @@
 .env
 .idea/
 logs.txt
+node_modules
 500
 bin
